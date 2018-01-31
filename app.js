@@ -1,12 +1,12 @@
 // Create sanity check below
-
+console.log("WAS GOOD");
 
 // # 1
 // find the length of the array
 var winterOlympicSports = ['snowboarding', 'hockey', 'ice skating', 'curling'];
     // write code below
 
-console.log() //4
+    console.log(winterOlympicSports.length) //4
 
 
 // # 2
@@ -14,65 +14,65 @@ console.log() //4
 var sports = ['basketball', 'volleyball', 'soccer', 'tennis'];
     // write code below
 
-console.log() //'soccer'
+console.log(sports[2]) //'soccer'
 
 
 // # 3
 // Change 'helmet' to 'sweat band'
 var tennisEquipment= ['raquet', 'tennis balls', 'net', 'helmet'];
     // write code below
-
-console.log() // ['raquet', 'tennis balls', 'net', 'sweat band'];
+    tennisEquipment[3] = "sweat band";
+console.log(tennisEquipment) // ['raquet', 'tennis balls', 'net', 'sweat band'];
   
 
 // # 4
 // Use push method to add 'Japan' 
 var countries = ['Mexico', 'Spain', 'Thailand', 'USA', 'Brazil'];
     // write code below
-
-console.log() // ['Mexico', 'Spain', 'Thailand', 'USA', 'Brazil', 'Japan'];
+countries.push("Japan");
+console.log(countries) // ['Mexico', 'Spain', 'Thailand', 'USA', 'Brazil', 'Japan'];
 
 
 // # 5
 // Use pop method. Console.log array and value that was popped off
 var states = ['California', 'Mississippi', 'Hawaii', 'Michigan', 'New York'];
     // write code below
-
-console.log() // [California', 'Mississippi', 'Hawaii', 'Michigan', 'New York'];
-console.log() // 'New York'
+var removed = states.pop();
+console.log(states) // [California', 'Mississippi', 'Hawaii', 'Michigan', 'New York'];
+console.log(removed) // 'New York'
 
 
 // # 6
 // Use unshift method to add 'Swahili'
 var languages = ['Dutch', 'Mongolian', 'English', 'Finnish', 'Spanish'];
     // write code below
-
-console.log() // ['Swahili', 'Dutch', 'Mongolian', 'English', 'Finnish', 'Spanish']
+languages.unshift("Swahili");
+console.log(languages) // ['Swahili', 'Dutch', 'Mongolian', 'English', 'Finnish', 'Spanish']
 
 
 // # 7
 // Use shift method. Console.log array and value that was shifted
 var cities = ['Honolulu', 'Los Angeles', 'Philidelphia', 'New Orleans', 'Denver'];
     // write code below
-
-console.log() // ['Los Angeles', 'Philidelphia', 'New Orleans', 'Denver'];
-console.log() // 'Honolulu'
+var shift = cities.shift();
+console.log(cities) // ['Los Angeles', 'Philidelphia', 'New Orleans', 'Denver'];
+console.log(shift) // 'Honolulu'
 
 
 // # 8
 // Sort array from lowest to highest
 var numbers = [5, 3, 1, 2, 8, 4];
     // write code below
-
-console.log() // [1, 2, 3, 4, 5, 8];
+numbers.sort();
+console.log(numbers) // [1, 2, 3, 4, 5, 8];
 
 
 // # 9
 // Reverse the array
 var counting = ['one', 'two', 'three', 'four', 'five'];
     // write code below
-
-console.log() // ['five', 'four' , 'three', 'two', 'one'];
+counting.reverse();
+console.log(counting) // ['five', 'four' , 'three', 'two', 'one'];
 
 
 // # 10
