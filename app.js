@@ -5,8 +5,8 @@ console.log("WAS GOOD");
 // find the length of the array
 var winterOlympicSports = ['snowboarding', 'hockey', 'ice skating', 'curling'];
     // write code below
-
-    console.log(winterOlympicSports.length) //4
+    winterOlympicSports.length;
+    console.log(winterOlympicSports) //4
 
 
 // # 2
@@ -21,7 +21,7 @@ console.log(sports[2]) //'soccer'
 // Change 'helmet' to 'sweat band'
 var tennisEquipment= ['raquet', 'tennis balls', 'net', 'helmet'];
     // write code below
-    tennisEquipment[3] = "sweat band";
+tennisEquipment[3] = "sweat band";
 console.log(tennisEquipment) // ['raquet', 'tennis balls', 'net', 'sweat band'];
   
 
@@ -79,8 +79,7 @@ console.log(counting) // ['five', 'four' , 'three', 'two', 'one'];
 // Return index number of 'vanilla'
 var iceCreamFlavors = ['rainbow sherbert', 'rocky road', 'cookies and cream', 'vanilla', 'strawberry'];
     // write code below
-
-console.log() // 4;
+console.log(iceCreamFlavors.indexOf("vanilla")) // 3;
 
 
 // # 11
@@ -88,47 +87,47 @@ console.log() // 4;
 var iceCreamFlavors = ['rainbow sherbert', 'rocky road', 'cookies and cream', 'vanilla', 'strawberry'];
     // write code below
 
-console.log() // -1;
+console.log(iceCreamFlavors.indexOf("green tea")) // -1;
 
 
 // # 12
 // Use slice method to remove 'yellow', 'black', 'red'
 var colors = ['green', 'yellow', 'black', 'red', 'pink'];
     // write code below
-
-console.log() // ['green', 'pink'];
+var x = colors.slice(1, 4);
+console.log(x) // ['yellow', 'black', 'red'];
 
 
 // # 13
 // Use splice method to delete the value 'lion'. Console.log array and the item that was removed
 var animals = ['bird', 'dog', 'cat', 'lion', 'wallaby', 'sloth'];
     // write code below
-
-console.log() // ['bird', 'dog', 'cat', 'wallaby', 'sloth'];
-console.log() // ['lion']
+var splicedout = animals.splice(3,1);
+console.log(animals) // ['bird', 'dog', 'cat', 'wallaby', 'sloth'];
+console.log(splicedout) // ['lion']
 
 
 // # 14
 // Use splice method to delete 2 values 'wallaby' & 'sloth'. Console.log array and the item that was removed
 var animals = ['bird', 'dog', 'cat', 'lion', 'wallaby', 'sloth'];
     // write code below
-
-console.log() // ['bird', 'dog', 'cat','lion'];
-console.log() // ['wallaby', 'sloth']
+    var splicedout2 = animals.splice(3,2);
+console.log(animals) // ['bird', 'dog', 'cat','lion'];
+console.log(splicedout2) // ['wallaby', 'sloth']
 
 
 // # 15
 // Use splice method to add the value 'Stegosaurus' before 'Velociraptor'
 var dinosaurs = ['Tyrannosaurus', 'Velociraptor', 'Triceratops', 'Pterodactyl', 'Brachiosaurus'];
     // write code below
-
-console.log() // ['Tyrannosaurus', 'Stegosaurus', 'Velociraptor', 'Triceratops', 'Pterodactyl', 'Brachiosaurus']
+dinosaurs.splice(1,0, "Stegosaurus")
+console.log(dinosaurs) // ['Tyrannosaurus', 'Stegosaurus', 'Velociraptor', 'Triceratops', 'Pterodactyl', 'Brachiosaurus']
 
 
 // # 16
 // Use splice method to delete the value 'Pterodactyl', then add 'Stegosaurus' and 'Diplodocus'. Console.log the array and deleted value
 var dinosaurs = ['Tyrannosaurus', 'Velociraptor', 'Triceratops', 'Pterodactyl', 'Brachiosaurus'];
     // write code below
-
-console.log() // ['Tyrannosaurus', 'Stegosaurus', 'Velociraptor', 'Triceratops', 'Stegosaurus', 'Diplodocus','Brachiosaurus']
-console.log() // ['Pterodactyl'];
+var splicedout3 = dinosaurs.splice(3,1, "Stegosaurus", "Diplodocus")
+console.log(dinosaurs) // ['Tyrannosaurus', 'Stegosaurus', 'Velociraptor', 'Triceratops', 'Stegosaurus', 'Diplodocus','Brachiosaurus']
+console.log(splicedout3) // ['Pterodactyl'];
